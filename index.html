@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Associação Regional de Produtores</title>
+  <meta name="theme-color" content="#1f7a43" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar">
+🌱 Associação Regional de Produtores de Mudas
+</div>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="badge">📦 Entregas rápidas na sua região</div>
+    <h1>Mudas produzindo direto de produtores regionais</h1>
+    <p>Produtores próximos da sua cidade entregando sem atravessadores.</p>
+  </div>
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="img/jabuticaba.webp" loading="lazy">
+<div class="card-body">
+<h2>Jabuticabeira Híbrida Produzindo</h2>
+<div class="price-wrap">
+<span class="old">R$289</span>
+<span class="new">R$37</span>
+</div>
+<button class="buy-btn">COMPRAR AGORA</button>
+<span class="small">PAGAR NA ENTREGA</span>
+</div>
+</div>
+
+<div class="card">
+<img src="img/manga.webp" loading="lazy">
+<div class="card-body">
+<h2>Mangueira Enxertada Palmer</h2>
+<div class="price-wrap">
+<span class="old">R$249</span>
+<span class="new">R$37</span>
+</div>
+<button class="buy-btn">COMPRAR AGORA</button>
+<span class="small">PAGAR NA ENTREGA</span>
+</div>
+</div>
+
+<div class="card">
+<img src="img/limao.webp" loading="lazy">
+<div class="card-body">
+<h2>Limoeiro Tahiti Adulto</h2>
+<div class="price-wrap">
+<span class="old">R$189</span>
+<span class="new">R$37</span>
+</div>
+<button class="buy-btn">COMPRAR AGORA</button>
+<span class="small">PAGAR NA ENTREGA</span>
+</div>
+</div>
+
+</section>
+
+<div class="popup-overlay" id="popupOverlay">
+<div class="popup">
+<h2>Digite seu CEP</h2>
+<input type="text" id="cepInput" placeholder="00000-000">
+<button class="continue-btn" id="continueBtn">CONTINUAR</button>
+<div class="loader-wrap" id="loaderWrap">
+<div class="loader"></div>
+</div>
+</div>
+</div>
+
+<section class="quiz-screen" id="quizScreen">
+<div class="quiz-container">
+
+<div class="quiz-badge">🌱 Região identificada com sucesso</div>
+
+<h1>Associação Regional de Produtores de <span id="cidade">sua região</span></h1>
+
+<div class="block">
+<h3>Somos daqui.</h3>
+<p>Conhecemos os produtores da região de <span class="cidade-text"></span>.</p>
+</div>
+
+<div class="offer-box">
+<h2>Receba agora a lista completa dos produtores ativos da região de <span class="cidade-text"></span></h2>
+
+<ul>
+<li>✅ Produtores próximos</li>
+<li>✅ Entrega rápida</li>
+<li>✅ Sem atravessadores</li>
+<li>✅ Acesso imediato</li>
+</ul>
+
+<div class="price-final">R$37</div>
+
+<button class="final-btn">PEDIR MINHA LISTA AGORA</button>
+
+</div>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
