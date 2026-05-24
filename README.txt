@@ -1,6 +1,8 @@
-Adicione suas imagens .webp dentro da pasta /img com os nomes:
-- jabuticaba.webp
-- manga.webp
-- limao.webp
+ADICIONE SUAS IMAGENS WEBP:
 
-Hospede no GitHub + Vercel.
+/img/jabuticaba.webp
+/img/manga.webp
+/img/limao.webp
+
+Hospedagem:
+GitHub + Vercel

@@ -22,6 +22,7 @@ e.target.value=value;
 });
 
 continueBtn.addEventListener('click',async()=>{
+
 const cep=cepInput.value.replace(/\D/g,'');
 
 if(cep.length<8){
@@ -32,13 +33,17 @@ return;
 loaderWrap.style.display='flex';
 
 try{
+
 const response=await fetch(`https://viacep.com.br/ws/${cep}/json/`);
 const data=await response.json();
 
 setTimeout(()=>{
+
 popupOverlay.style.display='none';
+
 document.querySelector('.hero').style.display='none';
 document.querySelector('.products').style.display='none';
+
 quizScreen.style.display='block';
 
 const cidade=data.localidade||'sua região';
@@ -49,11 +54,15 @@ cidadeText.forEach(item=>{
 item.innerText=cidade;
 });
 
-window.scrollTo({top:0,behavior:'smooth'});
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
 
 },1500);
 
 }catch(err){
 alert('Erro ao localizar região');
 }
+
 });
